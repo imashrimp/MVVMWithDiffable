@@ -17,6 +17,12 @@
 		178888FA2AB825E50099B2A0 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178888F92AB825E50099B2A0 /* CustomTextField.swift */; };
 		178888FE2AB82AAF0099B2A0 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178888FD2AB82AAF0099B2A0 /* Observable.swift */; };
 		178889002AB82B960099B2A0 /* ShrimplixViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178888FF2AB82B960099B2A0 /* ShrimplixViewModel.swift */; };
+		178889032AB84CBB0099B2A0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178889022AB84CBB0099B2A0 /* APIManager.swift */; };
+		178889092AB9074D0099B2A0 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178889082AB9074D0099B2A0 /* PhotoModel.swift */; };
+		1788890B2AB908AF0099B2A0 /* RandomPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1788890A2AB908AF0099B2A0 /* RandomPhotoViewController.swift */; };
+		1788890D2AB90BD70099B2A0 /* RandomPhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1788890C2AB90BD70099B2A0 /* RandomPhotoViewModel.swift */; };
+		1788890F2AB90E820099B2A0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1788890E2AB90E820099B2A0 /* .gitignore */; };
+		178889112AB90E9E0099B2A0 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178889102AB90E9E0099B2A0 /* APIKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,12 @@
 		178888F92AB825E50099B2A0 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		178888FD2AB82AAF0099B2A0 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		178888FF2AB82B960099B2A0 /* ShrimplixViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShrimplixViewModel.swift; sourceTree = "<group>"; };
+		178889022AB84CBB0099B2A0 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		178889082AB9074D0099B2A0 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		1788890A2AB908AF0099B2A0 /* RandomPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoViewController.swift; sourceTree = "<group>"; };
+		1788890C2AB90BD70099B2A0 /* RandomPhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoViewModel.swift; sourceTree = "<group>"; };
+		1788890E2AB90E820099B2A0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		178889102AB90E9E0099B2A0 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 		178888E12AB822BC0099B2A0 /* MVVMWithDiffable */ = {
 			isa = PBXGroup;
 			children = (
+				178889012AB84C670099B2A0 /* RandomPhoto */,
 				178888FC2AB82AA00099B2A0 /* Utility */,
 				178888E22AB822BC0099B2A0 /* AppDelegate.swift */,
 				178888E42AB822BC0099B2A0 /* SceneDelegate.swift */,
@@ -72,6 +85,7 @@
 				178888EB2AB822BD0099B2A0 /* Assets.xcassets */,
 				178888ED2AB822BD0099B2A0 /* LaunchScreen.storyboard */,
 				178888F02AB822BD0099B2A0 /* Info.plist */,
+				1788890E2AB90E820099B2A0 /* .gitignore */,
 			);
 			path = MVVMWithDiffable;
 			sourceTree = "<group>";
@@ -90,8 +104,20 @@
 			isa = PBXGroup;
 			children = (
 				178888FD2AB82AAF0099B2A0 /* Observable.swift */,
+				178889102AB90E9E0099B2A0 /* APIKeys.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		178889012AB84C670099B2A0 /* RandomPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				178889022AB84CBB0099B2A0 /* APIManager.swift */,
+				178889082AB9074D0099B2A0 /* PhotoModel.swift */,
+				1788890A2AB908AF0099B2A0 /* RandomPhotoViewController.swift */,
+				1788890C2AB90BD70099B2A0 /* RandomPhotoViewModel.swift */,
+			);
+			path = RandomPhoto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1788890F2AB90E820099B2A0 /* .gitignore in Resources */,
 				178888EF2AB822BD0099B2A0 /* LaunchScreen.storyboard in Resources */,
 				178888EC2AB822BD0099B2A0 /* Assets.xcassets in Resources */,
 				178888EA2AB822BC0099B2A0 /* Main.storyboard in Resources */,
@@ -171,12 +198,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				178889112AB90E9E0099B2A0 /* APIKeys.swift in Sources */,
+				178889092AB9074D0099B2A0 /* PhotoModel.swift in Sources */,
 				178888FA2AB825E50099B2A0 /* CustomTextField.swift in Sources */,
 				178889002AB82B960099B2A0 /* ShrimplixViewModel.swift in Sources */,
 				178888FE2AB82AAF0099B2A0 /* Observable.swift in Sources */,
+				1788890D2AB90BD70099B2A0 /* RandomPhotoViewModel.swift in Sources */,
 				178888E72AB822BC0099B2A0 /* ViewController.swift in Sources */,
 				178888E32AB822BC0099B2A0 /* AppDelegate.swift in Sources */,
+				1788890B2AB908AF0099B2A0 /* RandomPhotoViewController.swift in Sources */,
 				178888E52AB822BC0099B2A0 /* SceneDelegate.swift in Sources */,
+				178889032AB84CBB0099B2A0 /* APIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
