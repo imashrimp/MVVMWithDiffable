@@ -13,6 +13,10 @@
 		178888EA2AB822BC0099B2A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178888E82AB822BC0099B2A0 /* Main.storyboard */; };
 		178888EC2AB822BD0099B2A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178888EB2AB822BD0099B2A0 /* Assets.xcassets */; };
 		178888EF2AB822BD0099B2A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178888ED2AB822BD0099B2A0 /* LaunchScreen.storyboard */; };
+		178888F82AB823130099B2A0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 178888F72AB823130099B2A0 /* SnapKit */; };
+		178888FA2AB825E50099B2A0 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178888F92AB825E50099B2A0 /* CustomTextField.swift */; };
+		178888FE2AB82AAF0099B2A0 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178888FD2AB82AAF0099B2A0 /* Observable.swift */; };
+		178889002AB82B960099B2A0 /* ShrimplixViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178888FF2AB82B960099B2A0 /* ShrimplixViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,9 @@
 		178888EB2AB822BD0099B2A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		178888EE2AB822BD0099B2A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		178888F02AB822BD0099B2A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		178888F92AB825E50099B2A0 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		178888FD2AB82AAF0099B2A0 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		178888FF2AB82B960099B2A0 /* ShrimplixViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShrimplixViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				178888F82AB823130099B2A0 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +64,34 @@
 		178888E12AB822BC0099B2A0 /* MVVMWithDiffable */ = {
 			isa = PBXGroup;
 			children = (
+				178888FC2AB82AA00099B2A0 /* Utility */,
 				178888E22AB822BC0099B2A0 /* AppDelegate.swift */,
 				178888E42AB822BC0099B2A0 /* SceneDelegate.swift */,
-				178888E62AB822BC0099B2A0 /* ViewController.swift */,
+				178888FB2AB82A720099B2A0 /* LogIn */,
 				178888E82AB822BC0099B2A0 /* Main.storyboard */,
 				178888EB2AB822BD0099B2A0 /* Assets.xcassets */,
 				178888ED2AB822BD0099B2A0 /* LaunchScreen.storyboard */,
 				178888F02AB822BD0099B2A0 /* Info.plist */,
 			);
 			path = MVVMWithDiffable;
+			sourceTree = "<group>";
+		};
+		178888FB2AB82A720099B2A0 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				178888E62AB822BC0099B2A0 /* ViewController.swift */,
+				178888F92AB825E50099B2A0 /* CustomTextField.swift */,
+				178888FF2AB82B960099B2A0 /* ShrimplixViewModel.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		178888FC2AB82AA00099B2A0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				178888FD2AB82AAF0099B2A0 /* Observable.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +110,9 @@
 			dependencies = (
 			);
 			name = MVVMWithDiffable;
+			packageProductDependencies = (
+				178888F72AB823130099B2A0 /* SnapKit */,
+			);
 			productName = MVVMWithDiffable;
 			productReference = 178888DF2AB822BC0099B2A0 /* MVVMWithDiffable.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 178888D62AB822BC0099B2A0;
+			packageReferences = (
+				178888F62AB823130099B2A0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 178888E02AB822BC0099B2A0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +171,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				178888FA2AB825E50099B2A0 /* CustomTextField.swift in Sources */,
+				178889002AB82B960099B2A0 /* ShrimplixViewModel.swift in Sources */,
+				178888FE2AB82AAF0099B2A0 /* Observable.swift in Sources */,
 				178888E72AB822BC0099B2A0 /* ViewController.swift in Sources */,
 				178888E32AB822BC0099B2A0 /* AppDelegate.swift in Sources */,
 				178888E52AB822BC0099B2A0 /* SceneDelegate.swift in Sources */,
@@ -292,7 +328,6 @@
 				INFOPLIST_FILE = MVVMWithDiffable/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +355,6 @@
 				INFOPLIST_FILE = MVVMWithDiffable/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +392,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		178888F62AB823130099B2A0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		178888F72AB823130099B2A0 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 178888F62AB823130099B2A0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 178888D72AB822BC0099B2A0 /* Project object */;
 }
